@@ -1,5 +1,6 @@
 <h1><$php
 
-echo 'Hello World'
+  $output = 'Hello World!';
+  echo $output;
 
 ?></h1>
