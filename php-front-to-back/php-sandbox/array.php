@@ -39,7 +39,17 @@ $cars[] = 'chevy';
 // echo $people['Jill']
 
 // print_r($people);
-var_dump($people);
+// var_dump($people);
+
+//Multi-Dimensional Array
+
+$cars = array(
+  array('Honda', 20, 10),
+  array('Toyota', 30, 20),
+  array('Ford', 23, 12)
+);
+
+echo $cars[1][2];
 
 
 
