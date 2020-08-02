@@ -22,7 +22,24 @@ $cars[] = 'chevy';
 
   // print_r($cars);
 
-  var_dump($cars);
+  // var_dump($cars);
+
+  // Associative Arrays
+  $people = array('Brad' => 35, 'Jose' => 32, 'William' => 37);
+
+  // echo $people['Brad'];
+
+  $ids = [22 => 'Brad', 44 => 'Jose', 63 => 'William'];
+
+  // echo $ids[22];
+
+  //adding to an associative array
+
+  $people['Jill'] = 42;
+// echo $people['Jill']
+
+// print_r($people);
+var_dump($people);
 
 
 
