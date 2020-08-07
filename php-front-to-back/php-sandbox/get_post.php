@@ -1,20 +1,32 @@
+<?php
+  if (isset($_GET['name'])){
+    print_r($_GET);
+  echo $_GET['name'];
+  echo $_GET['email'];
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My website</title>
 </head>
+
 <body>
-  <form action="">
+  <form method="GET" action="get_post.php">
     <div>
-    <label for="">Name</label><br>
-    <input type="text" name="name">
+      <label for="">Name</label><br>
+      <input type="text" name="name">
     </div>
     <div>
-    <label for="">Email</label><br>
+      <label for="">Email</label><br>
+      <input type="text" name="email">
+    </div>
     <input type="submit" value="Submit">
-    </div>
   </form>
 </body>
+
 </html>
