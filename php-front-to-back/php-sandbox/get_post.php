@@ -1,8 +1,10 @@
 <?php
   if (isset($_GET['name'])){
     print_r($_GET);
-  echo $_GET['name'];
-  echo $_GET['email'];
+  // echo $_GET['name'];
+  // echo $_GET['name'];
+  // $name = htmlentities($_GET['name']);
+  // echo $name;
   }
 ?>
 
