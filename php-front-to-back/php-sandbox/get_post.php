@@ -1,17 +1,24 @@
 <?php
-  if (isset($_GET['name'])){
-    print_r($_GET);
-  // echo $_GET['name'];
-  // echo $_GET['name'];
-  // $name = htmlentities($_GET['name']);
-  // echo $name;
-  }
+if (isset($_GET['name'])){
+  // print_r($_GET);
+// echo $_GET['name'];
+$name = htmlentities($_GET['name']);
+// echo $name;
+}
 
-  if (isset($_POST['name'])){
-    print_r($_POST);
-    $name = htmlentities($_POST['name']); //it sends it through the headers
-    echo $name;
-  }
+// if (isset($_POST['name'])){
+//   print_r($_POST);
+//   $name = htmlentities($_POST['name']); //it sends it through the headers
+//   echo $name;
+// }
+
+// if (isset($_REQUEST['name'])) { //works whether the form is post or get; not used very much
+//   // print_r($_REQUEST);
+//   $name = htmlentities($_REQUEST['name']); //it sends it through the headers
+//   echo $name;
+// }
+
+// echo $_SERVER['QUERY_STRING']
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +31,7 @@
 </head>
 
 <body>
-  <form method="POST" action="get_post.php">
+  <form method="GET" action="get_post.php">
     <div>
       <label for="">Name</label><br>
       <input type="text" name="name">
@@ -35,6 +42,13 @@
     </div>
     <input type="submit" value="Submit">
   </form>
+  <ul>
+    <li><a href="get_post.php?name=Brad">Brad</a></li>
+    <li><a href="get_post.php?name=Steve">Steve</a></li>
+  </ul>
+  <h1>
+    <?php echo "{$name}'s Profile"; ?>;
+  </h1>
 </body>
 
 </html>
