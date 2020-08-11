@@ -6,6 +6,12 @@
   // $name = htmlentities($_GET['name']);
   // echo $name;
   }
+
+  if (isset($_POST['name'])){
+    print_r($_POST);
+    $name = htmlentities($_POST['name']); //it sends it through the headers
+    echo $name;
+  }
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +24,7 @@
 </head>
 
 <body>
-  <form method="GET" action="get_post.php">
+  <form method="POST" action="get_post.php">
     <div>
       <label for="">Name</label><br>
       <input type="text" name="name">
